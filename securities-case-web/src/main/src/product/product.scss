@@ -1,0 +1,112 @@
+/* Product Listing CSS */
+
+.product-container {
+    width: 100%;
+    font-size: 15px;
+}
+
+.product-container__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+.product-container__list-item-header {
+	background: #0905a9;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.product-container__list-item-link {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    background-color: #FFFFFF;
+    line-height: 30px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #CCCCCC;
+    padding-left: 10px;
+	padding-bottom: 7px;
+    padding-top: 7px;
+    cursor: pointer;
+
+    &:hover {
+        color: #FFFFFF;
+        background-color: #008FF3;
+    }
+}
+.product-container__list-item-header-price {
+    float: right;
+    margin-right: 10px;
+    color: #FFFFFF;
+}
+
+.product-container__list-item-price {
+    float: right;
+    margin-right: 10px;
+    color: #000;
+}
+
+.product-container__list-item-price--changed {
+    float: right;
+    margin-right: 10px;
+    color: #0905a9;
+    font-weight: bold;
+	-webkit-animation: flash linear 0.5s;
+	animation: flash linear 0.5s;
+}
+
+@-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+
+.product-container__list-item-btn {
+    width: 200px;
+    background: #0600ff;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/* React Animation */
+
+.product-enter {
+    opacity: 0.01;
+}
+
+.product-enter.product-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.product-leave {
+    opacity: 1;
+}
+
+.product-leave.product-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+.product-appear {
+    opacity: 0.01;
+}
+
+.product-appear.product-appear-active {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+}
+
+.class1 {
+	color: green;
+}
+
+.class2 {
+	color: red;
+}

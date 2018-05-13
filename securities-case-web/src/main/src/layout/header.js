@@ -5,7 +5,7 @@ import './header.css';
 const Header = () => {
 	return(
 		<div>
-			<nav role="navigation" aria-label="Global Navigation">
+			<nav aria-label="Global Navigation">
 				<div className="main-nav">
 					<ul className="main-nav__list">
 						<li className="main-nav__list-item">

@@ -1,3 +1,4 @@
+/* Shared CSS */
 body {
   font-size: 17px;
   line-height: 1.52947;
@@ -19,7 +20,7 @@ ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure, f
   background: #fafafa;
   padding: 20px; }
 
-.grid {
+.main__grid {
   max-width: 1004px;
   width: 1004px;
   min-width: 1004px;
@@ -31,7 +32,7 @@ ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure, f
   max-width: 980px;
   margin: 0 auto; }
 
-.row {
+.main__grid-row {
   position: relative;
   z-index: 1;
   margin-top: 20px; }

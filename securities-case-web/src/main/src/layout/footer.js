@@ -1,11 +1,15 @@
 import React from 'react';
 
+import './footer.css';
+
 class Footer extends React.Component {
     render() {
         return(
-            <div className="container">
-                Copyright 2018
-            </div>
+            <section className="footer-block">
+            	<footer className="footer-block__global">
+            		<div className="footer-block__global-copyright">Copyright ©  2018</div>
+            	</footer>
+            </section>
         );
     }
 }

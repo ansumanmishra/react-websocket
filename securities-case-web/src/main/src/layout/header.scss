@@ -1,0 +1,102 @@
+nav {
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 48px;
+    max-height: 44px;
+    background: #F2F2F2;
+    background: rgba(240, 240, 240, 0.9);
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.main-nav {
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    position: relative;
+    z-index: 2;
+    padding-left: -webkit-calc(22px + constant(safe-area-inset-left));
+    padding-left: calc(22px + constant(safe-area-inset-left));
+    padding-right: -webkit-calc(22px + constant(safe-area-inset-right));
+    padding-right: calc(22px + constant(safe-area-inset-right));
+}
+
+.main-nav__list {
+    cursor: default;
+    margin: 0 -10px;
+    text-align: justify;
+    width: auto;
+    height: 44px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+
+.main-nav__list-item {
+    display: inline-block;
+    position: relative;
+    height: 44px;
+    line-height: 44px;
+    z-index: 1;
+    vertical-align: top;
+}
+
+.main-nav__list-item-link {
+    font-size: 14px;
+    line-height: 44px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    opacity: 1;
+    color: #000;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 10px;
+    height: 44px;
+    background: no-repeat;
+    text-decoration: none;
+    white-space: nowrap;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-tap-highlight-color: transparent;
+    outline-offset: -7px;
+
+    &:hover {
+        opacity: .65;
+    }
+}
+
+.secondary-nav {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-bottom: 1px solid #d6d6d6;
+    max-width: none;
+    height: 50px;
+    line-height: 50px;
+}
+
+.secondary-nav__header-text {
+    font-size: 22px;
+}
+
+.secondary-nav__header {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+}

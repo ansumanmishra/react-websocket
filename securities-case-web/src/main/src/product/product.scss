@@ -1,19 +1,21 @@
 /* Product Listing CSS */
 
 .product-container {
-    width: 100%;
+    width: 80%;
     font-size: 15px;
+    float: right;
+    box-shadow: 0 1px 4px 0 var(--shadow-color, hsla(0, 0%, 0%, 0.1)), 0 0px 4px 0 var(--shadow-color, hsla(0, 0%, 0%, 0.1))
 }
 
 .product-container__list {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 15px;
+    font-size: 15px; 
 }
 
 .product-container__list-item-header {
-	background: #0905a9;
+	background: #007AFF;
     padding: 10px;
     color: white;
     border-radius: 5px;

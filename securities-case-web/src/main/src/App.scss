@@ -1,4 +1,44 @@
-.container {
-  width: 1024px;
-  margin: 10px auto;
+/* Shared CSS */
+body {
+	font-size: 17px;
+    line-height: 1.52947;
+    font-weight: 400;
+    letter-spacing: -0.021em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    background-color: white;
+    color: #333333;
+    font-style: normal;	
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure, form, fieldset, input, legend, pre, abbr, button {
+    margin: 0;
+    padding: 0;
+}
+/* Shared CSS */
+
+.main {
+    overflow: hidden;
+    background: #fafafa;
+    padding: 20px;
+}
+
+.main__grid {
+    max-width: 1004px;
+    width: 1004px;
+    min-width: 1004px;
+    padding: 0 1em;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-width: 0;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.main__grid-row {
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
 }

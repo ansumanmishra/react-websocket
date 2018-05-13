@@ -1,8 +1,8 @@
 const Stomp = require('webstomp-client');
 const SockJS = require('sockjs-client');
-
-const productServiceURL = 'http://localhost:8080/instruments';
-const webSocketURL = 'http://localhost:8080/stomp';
+const serverAddr = "http://localhost:8080";
+const productServiceURL = serverAddr + '/instruments';
+const webSocketURL = serverAddr + '/stomp';
 
 /* Getting the products */
 export function getProducts() {

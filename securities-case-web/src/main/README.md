@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
 ## Prerequisite
 
 - Node JS (Version > 6.0) should be installed

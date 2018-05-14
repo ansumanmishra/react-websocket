@@ -19,7 +19,7 @@ class productDetails extends React.Component {
 
 	render() {
 		return(
-				<li key={this.props.code}>
+				<li key={this.props.code} className="product-container__list-item">
 					<div className="product-container__list-item-link">{this.props.code} 
 						<span className={this.priceChanged ? 'product-container__list-item-price--changed' : 'product-container__list-item-price'}>{this.props.price}</span>
 					</div>

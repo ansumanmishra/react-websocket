@@ -1,10 +1,21 @@
 /* Product Listing CSS */
 
 .product-container {
-    width: 80%;
+    width: 100%;
     font-size: 15px;
-    float: right;
-    box-shadow: 0 1px 4px 0 var(--shadow-color, hsla(0, 0%, 0%, 0.1)), 0 0px 4px 0 var(--shadow-color, hsla(0, 0%, 0%, 0.1))
+    float: none;
+    box-shadow: 0 2px 4px 0 #CCCCCC;
+    border-radius: 5px;
+    background: #FFFFFF;
+    padding: 5px;
+    border: 1px solid #CCCCCC;
+}
+
+@media only screen and (min-width: 760px) {
+    .product-container {
+        width: 78%;
+        float: right;
+    }
 }
 
 .product-container__list {
@@ -14,11 +25,18 @@
     font-size: 15px; 
 }
 
-.product-container__list-item-header {
+.product-container__header {
 	background: #007AFF;
     padding: 10px;
-    color: white;
-    border-radius: 5px;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.product-container__list-item {
+    border-bottom: 1px solid #CCCCCC;
+    &:last-child {
+        border-bottom: none;
+    }
 }
 
 .product-container__list-item-link {
@@ -27,20 +45,17 @@
     color: #000000;
     background-color: #FFFFFF;
     line-height: 30px;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: #CCCCCC;
     padding-left: 10px;
 	padding-bottom: 7px;
     padding-top: 7px;
     cursor: pointer;
+    border-radius: 10px;
 
     &:hover {
-        color: #FFFFFF;
-        background-color: #008FF3;
+        background-color: #F1F1F1;
     }
 }
-.product-container__list-item-header-price {
+.product-container__header-price {
     float: right;
     margin-right: 10px;
     color: #FFFFFF;
@@ -55,12 +70,15 @@
 .product-container__list-item-price--changed {
     float: right;
     margin-right: 10px;
-    color: #0905a9;
+    color: #007AFF;
     font-weight: bold;
 	-webkit-animation: flash linear 0.5s;
 	animation: flash linear 0.5s;
 }
 
+/* 
+    Product grid animations
+ */
 @-webkit-keyframes flash {
 	0% { opacity: 1; } 
 	50% { opacity: .1; } 

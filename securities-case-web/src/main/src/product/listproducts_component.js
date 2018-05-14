@@ -25,12 +25,12 @@ class ListProducts extends React.Component {
     }
     render() {
         return(
-            <div className="product-container">   
+            <div className="product-container">
+                <div className="product-container__header">
+                    <strong>Products</strong>
+                    <span className="product-container__header-price"><strong>Price</strong></span>
+                </div>   
                 <ul className="product-container__list">
-                    <li className="product-container__list-item-header">
-                        <strong>Products</strong>
-                        <span className="product-container__list-item-header-price"><strong>Price</strong></span>
-                    </li>
                     <ReactCSSTransitionGroup
                       transitionName="product"
                       transitionEnterTimeout={500}

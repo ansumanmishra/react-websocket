@@ -1,6 +1,16 @@
 .sidebar {
-	width: 20%;
-	float: left;
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 760px) {
+    .sidebar {
+        width: 20%;
+        float: left;
+        text-align: left;
+    }
 }
 
 .sidebar__list {

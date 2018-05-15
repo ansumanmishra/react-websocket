@@ -1,7 +1,5 @@
 # Securities-Case
 
-This project is used as assignment when selecting new hires at ING Securities and Private Banking.
-
 Build this project by;
 
     $ mvn clean install

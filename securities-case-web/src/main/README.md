@@ -3,21 +3,15 @@
 - Node JS (Version > 6.0) should be installed
 - Install `yarn`: npm install -g yarn
 
-## Available Scripts
+## Install dependencies
 
 In the project directory `securities-case-web/src/main`, you can run:
 
-### `yarn start`
+### `yarn install`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Running the project
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br>
+CD into the directory `securities-case-web/src/main` and run:
 
 ### `yarn build`
 
@@ -28,3 +22,25 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+
+*Make sure the services are up and running*
+
+## For local development
+
+In the project directory `securities-case-web/src/main`, you can run:
+
+### `yarn start`
+
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console. In the development mode, the CORS extension has to be enabled in the chrome otherwise the services call won't work.
+
+## For running unit tests
+
+In the project directory `securities-case-web/src/main`, you can run:
+
+### `yarn test`
+
+Launches the test runner in the interactive watch mode.<br>
